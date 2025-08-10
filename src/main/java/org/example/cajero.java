@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-class Cajero{
+class Cajaro {
 
-    private static Scanner scanner = new Scanner(System.in);
-    private static ArrayList<String> historialTransacciones = new ArrayList<>();
-    private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final ArrayList<String> historialTransacciones = new ArrayList<>();
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
     public static void mostrarMenu() {
         System.out.println("\n=== CAJERO AUTOMÁTICO ===");
@@ -147,7 +147,7 @@ class Cajero{
         // Saldo inicial del usuario
         double[] saldo = {1500.00}; // Usamos arreglo para simular referencia
         double saldoInicial = saldo[0]; // Guardar saldo inicial para el resumen
-        int opcion = 0;
+        int opcion;
 
         System.out.println("Bienvenido al Cajero Automático");
         System.out.println("Cooperativa Guadalupana");

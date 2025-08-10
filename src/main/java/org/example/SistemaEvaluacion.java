@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-class SistemaEvaluacionVariosEstudiantes {
+class SistemaEvaluacion {
 
 
     public static double calcularPromedio(double[] notas) {
